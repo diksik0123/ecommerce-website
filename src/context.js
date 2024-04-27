@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { storeProducts, detailProduct } from './data';
-import { clear } from '@testing-library/user-event/dist/clear';
+
 
 const ProductContext = React.createContext();
 //Provider
@@ -10,7 +10,7 @@ class ProductProvider extends Component {
     state = {
         products: [],
         detailProduct: detailProduct,
-        cart: [],
+        cart: storeProducts,
         modalOpen: false,
         modalProduct: detailProduct,
         cartSubTotal: 0,
