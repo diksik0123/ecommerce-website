@@ -19,7 +19,7 @@ export default class Model extends Component {
             return (<ModalContainer>
               <div className='contaier'>
                 <div className='row'>
-                  <div id='modal' className='col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5'>
+                  <div id='modal' className='col-8 mx-auto col-md-8 col-lg-8 text-center text-capitalize p-5'>
                     <h5>Item added to the cart</h5>
                     <img src={img} className='img-fluid' alt="product"/>
                     <h5>{title}</h5>
