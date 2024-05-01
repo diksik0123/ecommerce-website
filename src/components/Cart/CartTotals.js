@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {ButtonContainer} from '../Button';
 
 export default function CartTotals({value}) {
     const {cartSubTotal, cartTax, cartTotal, clearCart} = value;
@@ -33,6 +34,11 @@ export default function CartTotals({value}) {
                     </span>
                     <strong>$ {cartTotal}</strong>
                 </h5>
+                <Link to='/'>
+                <ButtonContainer  onClick={()=>clearCart()}>
+                Checkout
+                </ButtonContainer>
+                </Link>
             </div>
         </div>
     </div>
