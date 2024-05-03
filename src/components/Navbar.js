@@ -12,24 +12,29 @@ export default class navbar extends Component {
   https://www.iconfinder.com/icons/1243689/call_phone_icon
   Creative Commons (Attribution 3.0 Unported);
   https://www.iconfinder.com/Makoto_msk */}
-  <Link to="/">
-    <img src={logo} alt="store" className="navbar-brand" />
+  <Link to="/" className='text-decoration-none fs-3'>
+    <img src={logo} alt="store" className="navbar-brand mb-1"/>
+    <span>Navbar</span>
     </Link>
-    <ul className="navbar-nav align-items-center">
-      <li className="nav-item ms-5">
-        <Link to="/" className="nav-link">
-          products
-        </Link>
-      </li>
-    </ul>
-    <Link to="/cart" className="ms-auto">
+    
+    <div className='ms-auto my-2 d-flex justify-content-end gap-4'>
+    <Link to="/products">
+        <ButtonContainer>
+        <span className="me-2">
+        <i className="fas fa-store" />
+        </span>
+        shop
+      </ButtonContainer>
+    </Link>
+    <Link to="/cart">
       <ButtonContainer>
         <span className="me-2">
         <i className="fas fa-cart-plus" />
         </span>
-        my cart
+        cart
       </ButtonContainer>
     </Link>
+    </div>
 
     </NavWrapper>;
   }
