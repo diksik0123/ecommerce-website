@@ -10,7 +10,7 @@ export default class navbar extends Component {
 
   <Link to="/" className='text-decoration-none fs-3'>
     <img src={logo} alt="store" className="navbar-brand mb-1"/>
-    <span  style={{color:'var(--mainWhite)'}}>Navbar</span>
+    <span  style={{color:'var(--mainWhite)'}}>Phone Store</span>
     </Link>
     
     <div className='ms-auto my-2 d-flex justify-content-end gap-4'>
