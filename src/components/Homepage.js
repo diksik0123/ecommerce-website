@@ -11,16 +11,11 @@ export default class Homepage extends Component {
     document.body.style.overflow = 'hidden';
   }
 
-  componentWillUnmount() {
-    // Re-enable scroll on unmount
-    document.body.style.overflow = '';
-  }
-
   render() {
     return (
      <div className='container'>
         <div className='row'>
-            <div className='col-md-6 text-center' style={{marginTop: '120px'}}>
+            <div className='col-md-6 text-center' style={{marginTop: '175px'}}>
                 <Title name="Welcome to" title="Phone Store"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet commodo orci, non maximus turpis. Morbi accumsan nec justo quis gravida. </p>
                 <Link to='/products'>
@@ -33,24 +28,12 @@ export default class Homepage extends Component {
                 </Link>
             </div>
             <div className='col-md-6'>
-                <div className="ms-5" style={parallelogram}>
-                  <img src={wallpaper} className='img-fluid ms-5' alt='placeholder' style={img}/>
+                <div className="container-fluid bg-container">
+                  <img src={wallpaper} className="img-fluid bg-image" alt='placeholder'/>
                   </div>
             </div>
-
         </div>
      </div>
     )
   }
 }
-
-const parallelogram = {
-  position: 'absolute',
-	transform: 'skew(-25deg)',
-}
-
-const img = {
-  transform: 'skew(20deg)',
-  position: 'relative'
-}
-
