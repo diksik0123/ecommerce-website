@@ -54,3 +54,24 @@ body{
   font-size: 1.2rem;
   color: var(--mainYellow);
 }
+
+.bg-container{
+  position: absolute;
+  transform: skew(-30deg);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bg-image{
+  position: relative;
+  right: 400px;
+  bottom: 120px;
+  transform: skewX(30deg);
+  z-index: 2;
+};
+
+/* @media screen and (max-width: 1024px) {
+  .bg-image{
+    display: none;
+  }
+} */
