@@ -7,8 +7,13 @@ import {Link} from 'react-router-dom';
 export default class Homepage extends Component {
 
   componentDidMount() {
-    // Disable scroll on mount
+    // Disable scrolling when the component mounts
     document.body.style.overflow = 'hidden';
+  }
+
+  componentWillUnmount() {
+    // Enable scrolling when the component unmounts
+    document.body.style.overflow = 'auto';
   }
 
   render() {
